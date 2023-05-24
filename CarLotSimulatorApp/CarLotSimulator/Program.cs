@@ -8,26 +8,44 @@ namespace CarLotSimulator
         {
             //TODO
 
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property
+            
 
+            var jigerCar = new Car();
+            jigerCar.Year = 2020;
+            jigerCar.Make = "Dodge";
+            jigerCar.Model = "ScatPack";
+            jigerCar.EngineNoise = "VROOOOM";
+            jigerCar.HonkNoise = "BEEPBEEP";
+            jigerCar.IsDriveable = true;
+
+
+
+            var simritsCar = new Car()
+            {
+                Year = 2017,
+                Make = "Mercedes",
+                Model = "C300",
+                EngineNoise = "nothing",
+                HonkNoise = "peep",
+                IsDriveable = true,
+            };
+
+            var amandeepCar = new Car(2009, "Toyota", "Avalon", "nada", "peepbeep", true);
+
+            jigerCar.MakeEngineNoise();
+            simritsCar.MakeEngineNoise();
+            amandeepCar.MakeEngineNoise();
+
+            
+            
+            
 
             //Now that the Car class is created we can instanciate 3 new cars
+
             //Set the properties for each of the cars
             //Call each of the methods for each car
 
-            //*************BONUS*************//
-
-            // Set the properties utilizing the 3 different ways we learned about, one way for each car
-
-            //*************BONUS X 2*************//
-
-            //Create a CarLot class
-            //It should have at least one property: a List of cars
-            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
-            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+            
         }
     }
 }
